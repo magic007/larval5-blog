@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function() {
+        var isIPad = (navigator.platform.indexOf("iPad") != -1)
+        if (isIPad) {
+          var content = 'width=1032, initial-scale=default';
+        } else {
+          var content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+        }
+        document.write('<meta name="viewport" content="' + content + '">');
+      })();
+    </script>
+
+    <title>GitHub for Windows</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+    <![endif]-->
+    <script src="javascripts/lib/modernizr.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      Modernizr.load([
+      {
+        load: ['//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','javascripts/application.js'],
+        complete: function () {
+          if ( !window.jQuery ) {
+            Modernizr.load('javascripts/lib/jquery.1.7.2.js');
+          }
+        }
+      }
+      ]);
+    </script>
+  </head>
+
+  <body class="home">
+
+  <div class="non-footer">
+
+    <div id="site">
+      <div id="page">
+
+        <header>
+          <h1><a href="/">github:windows</a></h1>
+          <nav>
+            <ul>
+              <li class="selected"><a href=".">Overview</a></li>
+              <li><a href="help.html">Help</a></li>
+              <li><a href="release-notes.html">Release Notes</a></li>
+            </ul>
+          </nav>
+          <span class="version">Windows XP, Vista, 7 &amp; 8</span>
+          <a class="download" href="http://github-windows.s3.amazonaws.com/GitHubSetup.exe"><span class="icon">Download</span><span class="v">download <em id="current-version">&#x2007;&#x2008;&#x2007;</em></span></a>
+        </header>
+
+        <section class="screenshot">
+          <div class="overlay primary">
+            <h2>Introducing GitHub for Windows</h2>
+            <p>Develop on Windows, share on GitHub.</p>
+            <ul class="overview">
+              <li>Clone Repositories</li>
+              <li>Browse History</li>
+              <li>Commit Changes</li>
+              <li>Branch Code</li>
+              <li>Share on GitHub.com</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="callout">
+            <p>The easiest way to use Git on Windows. <span>Period.</span></p>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <p class="sync screencapture">sync</p>
+              <h3>Stay in sync</h3>
+              <p>
+                The sync button turns the complex workflow of pulling and
+                pushing into a single operation. It notifies you when there are
+                new changes to pull down and lets you quickly share local
+                changes.
+              </p>
+            </li>
+            <li class="middle">
+              <p class="branch screencapture">sync</p>
+              <h3>Branch with ease</h3>
+              <p>
+                Branching is one of Git¡¯s best features. We¡¯ve made it easy to try
+                out remote branches, create new local branches, and publish branches
+                to share with others.
+              </p>
+            </li>
+            <li>
+              <p class="clone screencapture">sync</p>
+              <h3>Clone with a click</h3>
+              <p>
+                Quickly clone repositories from your account or any
+                organization you belong to. Want to pull down a repository from
+                GitHub.com? Check out the
+                <span class="mini-clone-in-windows-button" title="We¡¯ll activate this button on github.com after you install GitHub for Windows">Clone in Windows</span>
+                button.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+      </div><!-- /.page -->
+    </div><!-- /.site -->
+
+    </div><!-- /.non-footer -->
+
+    <footer>
+
+      <div class="lower_footer">
+        <div class="inner clearfix">
+          <div id="legal">
+           <ul>
+             <li><a href="http://github.com/blog">The GitHub Blog</a></li>
+             <li><a href="mailto:support@github.com">Support</a></li>
+             <li><a href="https://github.com/contact">Contact</a></li>
+           </ul>
+
+           <p>&copy; 2013 GitHub Inc. All rights reserved.</p>
+         </div><!-- /#legal or /#legal_ie-->
+        </div>
+      </div><!-- /.lower_footer -->
+
+    </footer>
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f8c30caf5a1f5684a00002e');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
+
