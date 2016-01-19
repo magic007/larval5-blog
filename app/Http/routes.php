@@ -24,7 +24,16 @@ Route::get('posts/show/{id}', 'PostsController@show')
 //留言提交
 Route::post('comment/store', 'CommentsController@store');
 
+//
+//Route::controllers([
+//    'admin' => 'Admin\AdminController@index'
+//]);
+
+//Route::get('/admin', 'Admin\AdminController@index');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+    'admin' => 'Admin\AdminController',
 ]);
+

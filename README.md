@@ -1,3 +1,23 @@
+## Laravel 5.0 blog
+-------
+## 安装方法
+* `git clone -b develop https://github.com/magic007/larval5-blog.git`
+* 修改 `.env` 数据库配置
+* 生成数据结构 `php artisan migrate`
+* 填充数据 `php artisan db:seed`
+* 绑定目录到 `public` 运行网站
+
+## 依赖
+* PHP5.4 or more
+* Laravel PHP Framework
+* [Composer](https://github.com/composer/composer)
+* yuanchao/laravel-5-markdown-editor
+* yuanchao/pjax-for-laravel-5
+
+
+
+## 感谢
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
